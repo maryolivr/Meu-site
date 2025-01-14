@@ -4,6 +4,7 @@
     <head>
         <title>Quiz para programadores</title>
         <meta name="description" content="Um quiz interativo para testar seus conhecimentos">
+    <link rel="stylesheet" href="/assets/style.css"/>
     </head>
     <body>
         <header>
@@ -27,7 +28,7 @@
                     <input type="radio" value="HTML" id="p1b" name="pergunta1">
                     <label for="p1b"> HTML</label><br>
                     <input type="radio" value="Javascript" id="p1c" name="pergunta1">
-                    <label for="p1c">Javascript</label><br>
+                    <label for="p1c" class="js">Javascript</label><br>
                     <input type="radio" value="Ruby" id="p1d" name="pergunta1">
                     <label for="p1d">Ruby</label>
                 </form>
@@ -57,14 +58,14 @@
             <section>
                 <h2>Pergunta 5: Quais dessas tecnologias são consideradas linguagens de programação?</h2>
                 <form>
-                    <input type="checkbox" id="p5" name="pergunta5" value="Javascript">
-                    <label for="p5a"> Javascript </label>
-                    <input type="checkbox" id="p5" name="pergunta5" value="HTML">
-                    <label for="p5a"> HTML </label>
-                    <input type="checkbox" id="p5" name="pergunta5" value="Java">
-                    <label for="p5a"> Java </label>
-                    <input type="checkbox" id="p5" name="pergunta5" value="CSS">
-                    <label for="p5a"> CSS </label>
+                    <input type="checkbox" id="p5a" name="pergunta5" value="Javascript">
+                    <label for="p5a" class="js"> Javascript </label>
+                    <input type="checkbox" id="p5b" name="pergunta5" value="HTML">
+                    <label for="p5b"> HTML </label>
+                    <input type="checkbox" id="p5c" name="pergunta5" value="Java">
+                    <label for="p5c"> Java </label>
+                    <input type="checkbox" id="p5d" name="pergunta5" value="CSS">
+                    <label for="p5d"> CSS </label>
                 </form>
             </section>
             <!--Pergunta 6: upload de arquivo -->
@@ -83,16 +84,18 @@
                         <option value="Type"> Type </option>
                         <option value="placeholder"> Placeholder </option>
                     </select>
-                    <!--Pergunta 8: imagem-->
-                    <section>
-                        <h2>Pergunta 8: Qual linguagem de programação é representada pelo logotipo abaixo?</h2>
-                        <figure>
-                            <img src="/images/java.webp" alt="java logo" style="width: 128px;"/>
-                            <figcaption>Figura 1: Logotipo de uma linguagem de programação</figcaption>
-                        </figure>
-                        <br/>
-                        <input type="text" name="pergunta8" id="p8" placeholder="Digite sua resposta..." />
-                    </section>
+                </form>
+            </section>
+            <!--Pergunta 8: imagem-->
+            <section>
+                <form>
+                    <h2>Pergunta 8: Qual linguagem de programação é representada pelo logotipo abaixo?</h2>
+                    <figure>
+                        <img src="/images/java.webp" alt="java logo" style="width: 128px;"/>
+                        <figcaption>Figura 1: Logotipo de uma linguagem de programação</figcaption>
+                    </figure>
+                    <br/>
+                    <input type="text" name="pergunta8" id="p8" placeholder="Digite sua resposta..." />
                 </form>
             </section>
             <!--Tabela de pontuação-->
@@ -150,7 +153,7 @@
             </details>
         </section>
         <!--Formulário de feedback-->
-        <section>
+        <section id="feedback">
             <h2>Nos dê o seu feedback</h2>
             <form>
                 <fieldset>
