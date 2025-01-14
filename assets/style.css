@@ -96,3 +96,17 @@ label {
 summary {
     cursor: pointer;
 }
+
+#feedback legend{
+    font-weight: bold;
+    margin: 0 .5rem;
+}
+
+#feedback fieldset{
+    padding: .6rem 1.2rem;
+}
+
+#feedback input, #feedback textarea{
+    margin-bottom: .8rem;
+}
+
