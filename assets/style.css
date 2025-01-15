@@ -69,8 +69,8 @@ select {
 }
 
 button {
-    background-color: #798252;
-    color: #1c1b1b;
+    background-color: #373;
+    color: #eee;
     border-radius:5px;
     border: none;
     outline:none;
@@ -78,10 +78,7 @@ button {
     margin: 2px;
 }
 
-button:hover {
-    background-color: #AABB88;
-    cursor:pointer;
-}
+
 
 label {
     cursor: pointer;
@@ -110,3 +107,20 @@ summary {
     margin-bottom: .8rem;
 }
 
+#enviar{
+    font-size: 16px;
+    padding: 8px;
+    border: 2px solid #116611;
+    cursor: pointer;
+    box-shadow:  2px 2px 5px #333;
+}
+
+#enviar:hover {
+    background-color: #595;
+    box-shadow: 2px 2px 5px #373;
+}
+
+#enviar:active{
+    box-shadow: none;
+    background-color: #353;
+}
