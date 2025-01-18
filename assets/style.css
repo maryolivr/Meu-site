@@ -20,6 +20,10 @@ header, footer {
     text-align: center;
 }
 
+header {
+    padding-bottom: 0;
+}
+
 footer {
     color:#798252;
 }
@@ -123,4 +127,45 @@ summary {
 #enviar:active{
     box-shadow: none;
     background-color: #353;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 8px 0 0 0;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none;
+    flex-grow: 1;
+    background-color: #116611;
+    margin: 0 auto;
+}
+
+header nav ul li{
+    display: inline-block;
+    text-align: center;
+    background-color: #eee;
+}
+
+header > nav > ul > li > a{
+    background-color: #161;
+    display: inline-block;
+    min-width: 100px;
+    padding: 4px 8px;
+    color: #eee;
+    text-decoration: none;
+}
+header > nav > ul > li > a.current-page{
+    background-color: #F4F0EA;
+    color: #161;
+    text-decoration: none;
+    font-weight: bold;
+}
+header > nav > ul > li > a:hover{
+    background-color: #595;
 }
