@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Quiz para programadores</title>
+        <meta name="description" content="Um quiz interativo para testar seus conhecimentos">
+    <link rel="stylesheet" href="/assets/style.css"/>
+    </head>
+    <body >
+        <header>
+            <h1>Quiz interativo para programadores</h1>
+            <p>Teste seus conhecimentos em programação e veja qual pontuação você consegue fazer!</p>
+            <nav>
+                <ul>
+                    <li><a href="/index.html" target="_self">Início</a></li>
+                    <li><a href="/pontuacao.html" target="_self">Pontuação</a></li>
+                    <li><a href="/respostas.html" target="_self">Respostas</a></li>
+                    <li><a href="/feedback.html" target="_self"  class="current-page">Feedback</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!--Introdução-->
+            <section>
+                <h2>Sobre esse quiz</h2>
+                <p><strong>Este quiz</strong> foi desenvolvido para testar seus conhecimentos em programação, como <em>linguagens de programação</em>, conceitos básicos e mais</p>
+                <p>Você encontrará diferentes tipos de perguntas, incluindo múltipla escolha, texto e perguntas de data. <br> Desafie-se com este quiz!</p>
+                <p>Você poderá encontrar alguns acrônimos como <abbr title="Hipertext Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, que são comumente usados em questões relacionados ao desenvolivimento web.</p>
+            </section>
+        <!--Formulário de feedback-->
+        <section id="feedback">
+            <h2>Nos dê o seu feedback</h2>
+            <form>
+                <fieldset>
+                    <legend>Informações de contato</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome"><br>
+                    <label for="Email">Email:</label>
+                    <input type="email" id="Email" name="Email"><br>
+                    <label for="comentários">Comentários:
+                    </label><br>
+                    <textarea name="comentários" id="comentários" rows="4" cols="50" placeholder="Digite seus comentários aqui"></textarea><br>
+                    <button onclick="alert('Feedback enviado')" id="enviar">Enviar Feedback</button>    
+                </fieldset>
+            </form>
+        </section>
+        </main>
+        <footer>
+            <p>&copy;Quiz de programadores. Todos os direitos reservados</p>
+            <p>Para conhecer mais sobre mim <a href="/sobremim.html" target="_blank">clique aqui</a></p>
+        </footer>
+    </body>
+</html>
