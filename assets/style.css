@@ -82,8 +82,6 @@ button {
     margin: 2px;
 }
 
-
-
 label {
     cursor: pointer;
 }
@@ -160,12 +158,39 @@ header > nav > ul > li > a{
     color: #eee;
     text-decoration: none;
 }
+
 header > nav > ul > li > a.current-page{
     background-color: #F4F0EA;
     color: #161;
     text-decoration: none;
     font-weight: bold;
 }
+
 header > nav > ul > li > a:hover{
     background-color: #595;
+}
+
+section>article>h3{
+    margin: 16px 0 8px 0;
+}
+
+section>article>time{
+    font-size: small;
+    display: inline-block;
+}
+
+section>article>address{
+    display: inline-block;
+}
+
+section article figure{
+    font-size: small;
+    color:#333;
+    margin: 4px 0;
+}
+
+article p{
+    margin: 1.5rem;
+    line-height: 1.3rem;
+    text-align: justify;
 }
